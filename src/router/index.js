@@ -80,11 +80,6 @@ const router = createRouter({
             component: () => import('../farmtrack/pages/customComunicationManagement/specialist-chat.component.vue')
         },
         {
-            path: '/specialist/projects',
-            name: 'specialistProjects',
-            component: () => import('../farmtrack/pages/advisory/specialist-projects.component.vue')
-        },
-        {
             path: '/specialist/notifications',
             name: 'specialistNotifications',
             component: () => import('../farmtrack/pages/customComunicationManagement/specialist-notifications.component.vue')
