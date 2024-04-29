@@ -113,8 +113,11 @@
                     </template>
                     <template #title>{{ crop.name }}</template>
                     <template #footer>
-                      <div style="display: flex; justify-content: center">
-                        <pv-button label="Detail" severity="warning" @click="showDetailsForPlantInSearch(crop)" />
+                      <div style="display: flex; justify-content: center" >
+                        <pv-button label="Detail" color=white severity="warning" @click="showDetailsForPlantInSearch(crop)">
+                          <div style="display: flex; justify-content: center; align-items: center; height: 100%;width: 100%">Add plant</div>
+                        </pv-button>
+
                       </div>
                     </template>
                   </pv-card>
