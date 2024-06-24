@@ -21,6 +21,14 @@
         <i class="pi pi-calendar" ></i>
         <span class="text" style="font-size: 1.2rem;color: white">Projects</span>
       </router-link>
+      <router-link v-if="usertype==='farmer'&&planId===2" to="/farmer/devices" class="button" style="margin-bottom: 1rem">
+        <i class="pi pi-tablet" ></i>
+        <span class="text" style="font-size: 1.2rem;color: white">Devices</span>
+      </router-link>
+      <p v-if="usertype==='farmer'&&planId===1" to="/farmer/devices" class="button" style="margin-bottom: 1rem">
+        <i class="pi pi-tablet" style="color: #626262" ></i>
+        <span class="text" style="font-size: 1.2rem;color: #626262 ">Devices</span>
+      </p>
       <router-link v-if="usertype==='farmer'" to="/farmer/notifications" class="button" style="margin-bottom: 1rem">
         <i class="pi pi-bell" ></i>
         <span class="text" style="font-size: 1.2rem;color: white">Notifications</span>
@@ -70,6 +78,7 @@
 
 <script>
 import { useRoute } from 'vue-router';
+import logoURL from '../../assets/logo.svg'
 export default {
   data() {
     return {

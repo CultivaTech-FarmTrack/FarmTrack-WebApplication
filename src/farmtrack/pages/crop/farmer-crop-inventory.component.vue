@@ -117,12 +117,10 @@
                         <pv-button label="Detail" color=white severity="warning" @click="showDetailsForPlantInSearch(crop)">
                           <div style="display: flex; justify-content: center; align-items: center; height: 100%;width: 100%">Add plant</div>
                         </pv-button>
-
                       </div>
                     </template>
                   </pv-card>
                 </div>
-
               </div>
             </div>
           </div>

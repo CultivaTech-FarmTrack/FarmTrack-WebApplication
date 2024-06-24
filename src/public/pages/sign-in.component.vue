@@ -15,9 +15,9 @@
         </template>
         <template #content>
           <div class="form">
-            <label >Email</label>
+            <label for="email"  style="margin-top: 0.5rem">Email</label>
             <pv-input id="email" class="input" v-model="email" maxlength="256" ></pv-input>
-            <label style="margin-top: 0.5rem">Password</label>
+            <label for="email" style="margin-top: 0.5rem">Password</label>
             <pv-input id="password" type="password" class="input" v-model="password"></pv-input>
           </div>
           <div class="footer"  >
@@ -83,6 +83,28 @@ export default {
 </script>
 
 <style scoped>
+.buttons  {
+  background-color: #337e21;
+  border-color: #337e21;
+  color: white;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem; /* tamaño de fuente apropiado */
+  display: flex;
+  margin: 1.3rem 0;
+  justify-content: space-around;
+}
+.buttons :hover {
+  background-color: #285a15; /* un tono más oscuro al hacer hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra para efecto de elevación */
+  transform: translateY(-2px); /* ligero movimiento hacia arriba */
+}
+.buttons :active {
+  background-color: #1e4211; /* aún más oscuro al presionar */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25); /* sombra más ajustada */
+}
+
 .form label{
   display: block;
 }
@@ -93,6 +115,7 @@ export default {
 }
 .Text{
   text-align: center;
+  color: white ;
 }
 .rw{
   color: white;
@@ -104,18 +127,15 @@ export default {
   align-items: center;
   height: 97vh;
 }
-.form{
-  margin: 0 0 0 2rem;
-  padding-top: 1rem;
-}
 .form .input{
-  margin: 0.3rem 0;
-
-}
-.buttons{
-  display: flex;
-  margin: 1.3rem 0;
-  justify-content: space-around;
+  width: 100%; /* Asegura que el input ocupa todo el espacio disponible */
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #0a0a0a; /* Un fondo claro para los campos */
+  border: 1px solid #ccc; /* Un borde sutil */
+  border-radius: 5px; /* Bordes redondeados para un look más suave */
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); /* Sombra interior para profundidad */
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 .footer{
   margin-top: 1rem;

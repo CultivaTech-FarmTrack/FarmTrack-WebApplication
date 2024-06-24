@@ -28,6 +28,11 @@ const router = createRouter({
             component: () => import('../farmtrack/pages/advisory/farmer-specialist-contacts.component.vue')
         },
         {
+            path: '/farmer/devices',
+            name: 'devices',
+            component: () => import('../farmtrack/pages/iotManagement/farmer-devices.component.vue')
+        },
+        {
             path: '/farmer/notifications',
             name: 'notifications',
             component: () => import('../farmtrack/pages/customComunicationManagement/farmer-notifications.component.vue')
@@ -78,6 +83,11 @@ const router = createRouter({
             path: '/specialist/chats',
             name: 'specialistChat',
             component: () => import('../farmtrack/pages/customComunicationManagement/specialist-chat.component.vue')
+        },
+        {
+            path: '/specialist/projects',
+            name: 'specialistProjects',
+            component: () => import('../farmtrack/pages/advisory/specialist-projects.component.vue')
         },
         {
             path: '/specialist/notifications',
