@@ -101,7 +101,7 @@
                 </div>
                 <div style="display: flex;justify-content: center;width: 100%;color: #ff4b4b">
                   <div>
-                    <p>TEMPERATURE</p>
+                    <p>HUMIDITY</p>
                     <p>OUT OF RANGE</p>
                   </div>
                 </div>
