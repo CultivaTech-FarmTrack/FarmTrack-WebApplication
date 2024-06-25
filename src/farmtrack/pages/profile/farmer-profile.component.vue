@@ -210,8 +210,8 @@ export default {
       planId:parseInt(sessionStorage.getItem("planId").toString()),
       plan: {},
       publishableKey:'pk_test_51OAzYZHe6cIQ9MTkeu2FPZCcR1olGo1LeCLLkUNdmVvEXBGmIv2Tw3jFWWhqzCDZ6agSJYrMsQhBwCOdEeeMs3zf007fpn6u8x',
-      successURL:'http://localhost:5173/',
-      cancelURL:'http://localhost:5173/',
+      successURL:'https://farm-track.netlify.app/',
+      cancelURL:'https://farm-track.netlify.app/',
       loadingP: false,
       lineItems: [
         {

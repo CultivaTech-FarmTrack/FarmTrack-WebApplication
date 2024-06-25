@@ -23,24 +23,11 @@ import Sidebar from './farmtrack/components/sidebar.component.vue'
   --sidebar-width: 300px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Fira sans', sans-serif;
-}
-
 body {
   background: var(--light);
 }
 
-button {
-  cursor: pointer;
-  appearance: none;
-  border: none;
-  outline: none;
-  background: none;
-}
+
 
 .app {
   display: flex;

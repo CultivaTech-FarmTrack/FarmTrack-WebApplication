@@ -273,8 +273,8 @@ export default {
         verified: { value: null, matchMode: FilterMatchMode.EQUALS }
       },
       publishableKey:'pk_test_51OAzYZHe6cIQ9MTkeu2FPZCcR1olGo1LeCLLkUNdmVvEXBGmIv2Tw3jFWWhqzCDZ6agSJYrMsQhBwCOdEeeMs3zf007fpn6u8x',
-      successURL:'http://localhost:5173/farmer/devices',
-      cancelURL:'http://localhost:5173/farmer/devices',
+      successURL:'https://farm-track.netlify.app/devices',
+      cancelURL:'https://farm-track.netlify.app/devices',
       loading: false,
       lineItems: [
         {

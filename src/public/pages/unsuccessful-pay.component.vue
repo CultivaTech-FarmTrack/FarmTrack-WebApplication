@@ -99,8 +99,8 @@ export default {
       deviceId:null,
       accountId:null,
       publishableKey:'pk_test_51OAzYZHe6cIQ9MTkeu2FPZCcR1olGo1LeCLLkUNdmVvEXBGmIv2Tw3jFWWhqzCDZ6agSJYrMsQhBwCOdEeeMs3zf007fpn6u8x',
-      successURL:'http://localhost:5173/successful-pay',
-      cancelURL:'http://localhost:5173/unsuccessful-pay',
+      successURL:'https://farm-track.netlify.app/',
+      cancelURL:'https://farm-track.netlify.app/',
       loading: false,
       lineItems: [
         {
@@ -128,7 +128,7 @@ export default {
   methods:{
     tryAgain(){
       if(this.isDeviceBought){
-        this.successURL='http://localhost:5173/farmer/devices'
+        this.successURL='https://farm-track.netlify.app/farmer/devices'
         if(this.DeviceModel==='DHT22'){
           this.lineItems[0].price='price_1OCmbGHe6cIQ9MTkGUrgef5y'
         }
