@@ -64,9 +64,6 @@
                     <p class="detail-text">Land type: {{ currentPlantInSearch.landType }}</p>
                   </div>
                   <div class="detail-row">
-                    <p class="detail-text">Distance between plants: {{ currentPlantInSearch.distanceBetweenPlants }}</p>
-                  </div>
-                  <div class="detail-row">
                     <p class="detail-text">Weather conditions: {{ currentPlantInSearch.weatherConditions }}</p>
                   </div>
                 </div>
@@ -145,6 +142,12 @@
                 </div>
                 <div class="detail-row">
                   <p class="detail-text">Distance between plants: {{ currentCrop.distanceBetweenPlants }}</p>
+                </div>
+                <div class="detail-row">
+                  <p class="detail-text">Ideal Temperature: {{ currentCrop.minTemperature }}-{{currentCrop.maxTemperature}} </p>
+                </div>
+                <div class="detail-row">
+                  <p class="detail-text">Ideal Humidity: {{ currentCrop.minHumidity }}-{{currentCrop.maxHumidity}} </p>
                 </div>
                 <div class="detail-row">
                   <p class="detail-text">Weather conditions: {{ currentCrop.weatherConditions }}</p>

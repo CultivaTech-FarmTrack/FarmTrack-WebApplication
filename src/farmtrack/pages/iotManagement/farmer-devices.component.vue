@@ -319,8 +319,8 @@ export default {
   },
   methods:{
     isTemperatureOutOfRange(){
-      let minRange=this.currentCropRanges.minHumidity
-      let maxRange=this.currentCropRanges.maxHumidity
+      let minRange=this.currentCropRanges.minTemperature
+      let maxRange=this.currentCropRanges.maxTemperature
       if(this.currentDeviceValue.planTemperature>=maxRange || this.currentDeviceValue.planTemperature<=minRange ){
         return true
       }else {
